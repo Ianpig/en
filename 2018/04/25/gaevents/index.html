@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><link rel="alternate" href="https://ianchuu.com/2018/04/25/gaevents/index.html" hreflang="zh-tw"><link rel="alternate" href="https://en.ianchuu.com/2018/04/25/gaevents/index.html" hreflang="en"><title>Google analytics event tracking,conversion tracking setting teach | Ian Chu</title><meta property="og:title" content="Google analytics event tracking,conversion tracking setting teach | Ian Chu"><link rel="canonical" href="https://en.ianchuu.com/2018/04/25/gaevents/index.html"><script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Google analytics event tracking,conversion tracking setting teach",
+  "description": "Google Analytics is a very important event tracker. You can use the methods ga('send', 'event', xx.xx.xx) provided by ga to generate an event. Once you have successfully generated an event, you can set it as a transition target again. You can do it by registering members, completing forms, etc.",
+  "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id": "https://ianchuu.com/en/2018/04/25/gaevents/index.html" 
+  },
+  "datePublished":  "2018-04-25T15:29:39.000Z" ,
+  "dateModified":  "2018-06-03T06:41:16.749Z" ,
+  "image": "https://en.ianchuu.com/images/google_analytics.png",
+  "author": {
+      "@type": "Person",
+      "name":  "Ian Chu"
+  },
+  "publisher": {
+      "@type": "Organization",
+      "name":  "Ian Chu",
+      "logo": {
+        "@type": "ImageObject",
+        "url":  "https://en.ianchuu.com/amp-dist/sample/logo.png",
+        "width":  600 ,
+        "height":  60 
+      }
+  }
+}</script><meta name="description" content="Google Analytics is a very important event tracker. You can use the methods ga('send', 'event', xx.xx.xx) provided by ga to generate an event. Once you have successfully generated an event, you can set it as a transition target again. You can do it by registering members, completing forms, etc."><meta property="og:description" content="Google Analytics is a very important event tracker. You can use the methods ga('send', 'event', xx.xx.xx) provided by ga to generate an event. Once you have successfully generated an event, you can set it as a transition target again. You can do it by registering members, completing forms, etc."><meta property="og:url" content="https://en.ianchuu.com/2018/04/25/gaevents/index.html"><meta property="og:type" content="website"><meta property="og:image" content="https://en.ianchuu.com/images/google_analytics.png"><link rel="amphtml" href="./amp/index.html"><link rel="stylesheet" type="text/css" href="/css/style.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-111039507-2','auto');ga('send','pageview');</script><script>var host = "en.ianchuu.com";
+if ((host == window.location.host) && (window.location.protocol != "https:")){
+  window.location.protocol = "https";
+}</script><script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: "ca-pub-9648356696943801",
+  enable_page_level_ads: true
+});</script></head><body><div class="body_container"><div id="header"><div class="site-name"><a id="logo" href="/.">Ian Chu</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Google analytics event tracking,conversion tracking setting teach</h1><div class="post-meta">Apr 25, 2018<span> | </span><span class="category"><a href="/categories/marketing/">marketing</a></span></div><a class="disqus-comment-count" data-disqus-identifier="2018/04/25/gaevents/" href="/2018/04/25/gaevents/#disqus_thread"></a><div class="post-content"><p>Google analytics? is a great tool for tracking data. It has an important function of “event tracking.” Event tracking allows us to record user actions, such as clicking on the register member button, video playback, or scrolling screens, etc. As long as the action can be judged, even the mouse movement can be traced.</p>
+<p><img src="/images/google_analytics.png" alt="google analytics" title="google analytics"></p>
+<p>Usually a website must have a required KPI, such as the number of registered members, the number of orders, the number of forms, etc. If no conversion target is established at this time, can the traffic be justified? The next advertisement can only be blindly hit. G.</p>
+<p>At this time, you can use the methods ga(‘send’, ‘event’, xx, xx, xx) provided by google analytics to generate events for these actions. After the event is successfully generated, you can set this event as the conversion target again. Can do the tracking of registered members, fill in forms, etc.</p>
+<p>However, in fact most of the responsibilities are marketing, technicians may not know how to set up an affair, or they may not have technical staff. This must be done by themselves. In fact, the basic event tracking is not difficult, later to teach you how to write tracking events.</p>
+<h2 id="Google-analytics-Settings-Event"><a href="#Google-analytics-Settings-Event" class="headerlink" title="Google analytics Settings Event"></a>Google analytics Settings Event</h2><p>First to teach you to set the ga event, below the official file, it is clear how the ga event works, when ga (send, {hitType: ‘event’, xxx }) execution, with hitType event, plus The necessary parameters, event categories, and event actions allow google analytics to receive data. The following program is a simple method of event execution.</p>
+<ul>
+<li>Developer Document : <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/events?hl=zh-cn" title="google analytics event 技術文件" target="_blank" rel="noopener">google analytics event document </a></li>
+<li>Instructions : <a href="https://support.google.com/analytics/answer/1033068" title="ga 事件中文說明" target="_blank" rel="noopener">ga event Instructions </a></li>
+</ul>
+<p><br><br>A brief introduction about writing</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//When the user triggers it will be sent Category: Guide List, Action: Click, Tag: Registered Member, Value: 200</span><br><span class="line">ga(&apos;send&apos;, &#123;</span><br><span class="line">  hitType: &apos;event&apos;,</span><br><span class="line">  eventCategory: &apos;nav list&apos;, // category (must)</span><br><span class="line">  eventAction: &apos;click&apos;, //action (must)</span><br><span class="line">  eventLabel: &apos;register member&apos; //label (option)</span><br><span class="line">  eventValue: &apos;200&apos; //value (option)</span><br><span class="line">&#125;);</span><br><span class="line">// ==&gt; 下方為簡化</span><br><span class="line">ga(&apos;send&apos;, &apos;event&apos;, &apos;nav list&apos;, &apos;click&apos;, &apos;register member&apos;, 200);</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<p>After writing the parameters of the event, how to trigger it again, we expect the user to click the register and login member button to execute the event record of ga.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">// Login register button</span><br><span class="line"></span><br><span class="line">// 1.html onclick setting</span><br><span class="line">...</span><br><span class="line">&lt;button onclick=&quot;ga(&apos;send&apos;, &apos;event&apos;, &apos;nav list&apos;, &apos;click&apos;, &apos;login&apos;);&quot; id=&quot;loginMember&quot; class=&quot;btn btn-primary&quot;&gt;Login&lt;/button&gt;</span><br><span class="line">&lt;button onclick=&quot;ga(&apos;send&apos;, &apos;event&apos;, &apos;nav list&apos;, &apos;click&apos;, &apos;register&apos;, 200);&quot; id=&quot;registerMember&quot; class=&quot;btn btn-warning&quot;&gt;Register&lt;/button&gt;</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">// 2.if you can not modify html</span><br><span class="line">// javascript track click</span><br><span class="line">...</span><br><span class="line">&lt;button id=&quot;loginMember&quot; class=&quot;btn btn-primary&quot;&gt;login&lt;/button&gt;</span><br><span class="line">&lt;button id=&quot;registerMember&quot; class=&quot;btn btn-warning&quot;&gt;register&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">window.addEventListener(&quot;DOMContentLoaded&quot;, function() &#123;</span><br><span class="line">  document.querySelector(&apos;#loginMember&apos;).addEventListener(&apos;click&apos;,function(e)&#123;</span><br><span class="line">    ga(&apos;send&apos;, &apos;event&apos;, &apos;nav list&apos;, &apos;click&apos;, &apos;login&apos;);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  document.querySelector(&apos;#register&apos;).addEventListener(&apos;click&apos;,function(e)&#123;</span><br><span class="line">    ga(&apos;send&apos;, &apos;event&apos;, &apos;nav list&apos;, &apos;click&apos;, &apos;register&apos;, 200);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;, false);</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h3 id="sample-demo"><a href="#sample-demo" class="headerlink" title="sample demo"></a>sample demo</h3><p>Simply make two buttons, click on the button below will be issued ga event method, you can let us see the data on the ga, click on the immediate =&gt; event to check for success, behavior =&gt; event you need Only a few hours of data will appear.</p>
+<p><div style="background:#eee;padding:15px;text-align:center;"><br>demo:<br>  <button id="loginMember" class="pure-button pure-button-primary">login</button>  <button id="registerMember" class="pure-button pure-button-primary">register</button><br></div></p>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('#loginMember').addEventListener('click',function(e){
+      alert('trigger ga event login')
+      ga('send', 'event', 'nav list', 'click', 'login');
+    });
+
+    document.querySelector('#registerMember').addEventListener('click',function(e){
+      alert('trigger ga event register')
+      ga('send', 'event', 'nav list', 'click', 'register', 200);
+    });
+  }, false);
+</script>
+
+
+<p>Check if there is any data in ga and find that the number is successful, and you’re done!<br><img src="/images/ga即時event.png" alt="ga instant event" title="ga即時event"></p>
+<p><br></p>
+<p>Finally, I wrote the google event generator by the way. If you don’t change the parameters, just copy and paste it. I just didn’t add the parameters to cancel the interaction, and the form didn’t have a special design.</p>
+<ul>
+<li>Link : <a href="https://ianchuu.com/work/gaeventgenerator.html" title="ga event generator" target="_blank" rel="noopener">ga event generator </a></li>
+</ul>
+<iframe height="530" scrolling="no" src="https://ianchuu.com/work/gaeventgenerator.html" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;"><br></iframe>
+
+
+<h2 id="Google-analytics-Event-Set-Goal-Conversion"><a href="#Google-analytics-Event-Set-Goal-Conversion" class="headerlink" title="Google analytics Event Set Goal Conversion"></a>Google analytics Event Set Goal Conversion</h2><p>The official document has different settings for teaching conversions. We use the events we just created to set the conversions. Then we only need to set the target conversion. Click the administrator in the lower left corner =&gt; click target =&gt; add target =&gt; Custom.</p>
+<ul>
+<li>Document : <a href="https://support.google.com/analytics/answer/1032415" title="ga 官方目標設定" target="_blank" rel="noopener">ga conversion target setting </a></li>
+</ul>
+<p><img src="/images/轉換設定.png" alt="ga conversion target setting1" title="轉換設定"></p>
+<p>Select the event and enter the event name<br><img src="/images/轉換設定2.png" alt="ga conversion target setting2" title="轉換設定2"></p>
+<p>Test events to see if there is a digit in an instant conversion<br><img src="/images/轉換設定3.png" alt="ga conversion target setting3" title="轉換設定3"></p>
+<h3 id="After-finishing-the-event-and-converting-settings"><a href="#After-finishing-the-event-and-converting-settings" class="headerlink" title="After finishing the event and converting settings"></a>After finishing the event and converting settings</h3><p>After completing the conversion setup, we can determine which advertising is performing better or which page users are converting based on the conversion figures.</p>
+<p>If you are familiar with javascript, you can also write some dynamic judgments. For example, if you track the link of a block and then dynamically bring in the linked tag name or page, you can summarize which link users in this block are most frequently clicked. , which are the most infrequent clicks, etc.</p>
+<p>In the case of advertising, I think that the website is setting up ga events. After the conversion, gtm is combined, which is very helpful for judging the effectiveness. If you operate the advertisement but it will not work, then it is recommended that you try to look at the settings. Events and conversions are very useful tools for marketing, giving you more weapons to play on the battlefield.</p>
+</div><div class="post__related"><span class="category-title"> Related : </span><span class="category"><category class="name"></category></span><ul class="related-posts"><li class="related-posts-item"><a class="related-posts-link" href="/2018/01/28/whatseo/">SEO optimization Google guideline introduction</a></li><li class="related-posts-item"><a class="related-posts-link" href="/2018/05/09/fbvotify/">Facebook Domain Verification fans page</a></li></ul></div><div class="tags"><a href="/tags/google-analytics/">google analytics</a></div><div class="post-nav"><a class="pre" href="/2018/05/08/reacthoc/index.html">React Higher Order Components Preliminary concept</a><a class="next" href="/2018/03/25/interview/index.html">Front-end engineer interview experience</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'ianchuu';
+var disqus_identifier = '2018/04/25/gaevents/';
+var disqus_title = 'Google analytics event tracking,conversion tracking setting teach';
+var disqus_url = 'https://en.ianchuu.com/2018/04/25/gaevents/';
+$('.btn_click_load').click(function() {
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  $('.btn_click_load').css('display','none');
+});
+$.ajax({
+  url: 'https://disqus.com/next/config.json',
+  timeout: 3000,
+  type: 'GET',
+  success: (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    $('.btn_click_load').css('display','none');
+  })(),
+  error: function() {
+    $('.btn_click_load').css('display','block');
+  }
+});</script><script id="dsq-count-scr" src="//ianchuu.disqus.com/count.js" async></script></div><script type="text/javascript" src="/js/custom.js?v=0.0.0" async></script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://en.ianchuu.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">life</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/marketing/">marketing</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/google-map/" style="font-size: 15px;">google map</a> <a href="/tags/javascript/" style="font-size: 15px;">javascript</a> <a href="/tags/array/" style="font-size: 15px;">array</a> <a href="/tags/facebook/" style="font-size: 15px;">facebook</a> <a href="/tags/google-analytics/" style="font-size: 15px;">google analytics</a> <a href="/tags/frontend/" style="font-size: 15px;">frontend</a> <a href="/tags/googleform/" style="font-size: 15px;">googleform</a> <a href="/tags/react/" style="font-size: 15px;">react</a> <a href="/tags/seo/" style="font-size: 15px;">seo</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/fbvotify/">Facebook Domain Verification fans page</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/reacthoc/">React Higher Order Components Preliminary concept</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/25/gaevents/">Google analytics event tracking,conversion tracking setting teach</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/25/interview/">Front-end engineer interview experience</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/02/08/googleformapi/">Google sheet Spreadsheet form api</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/01/28/whatseo/">SEO optimization Google guideline introduction</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/16/arrayhandle/">Javascript Array sorting object</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/11/Google Map marker cluster 標記使用教學/">Google Map marker cluster marker sample</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="https://www.hoyasign.com/" title="弘揚廣告招牌" target="_blank">弘揚廣告招牌</a></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> Recent Comments</i></div><script type="text/javascript" src="//ianchuu.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Ian Chu. Time flies like a Cannonball</a> | by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"></a> <a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a> - Lang <a rel="follow" target="_self" href="https://ianchuu.com/2018/04/25/gaevents/index.html">CH</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
