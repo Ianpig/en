@@ -1572,19 +1572,19 @@ em.search-keyword {
     width: 100%;
     height: 100%;
     position: fixed; }
-  .overlay nav ul {
+  .overlay ul {
     list-style-type: none;
     position: relative;
-    top: 50px;
+    top: 20px;
     left: 0;
     opacity: 0;
     transform: translateX(100px);
     transition: all 0.3s 0.2s ease-out;
     text-transform: capitalize; }
-  .show .overlay nav ul {
+  .show .overlay ul {
     opacity: 1;
     transform: translateX(0); }
-  .overlay nav a {
+  .overlay a {
     display: block;
     line-height: 42px;
     text-decoration: none;
