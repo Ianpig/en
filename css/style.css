@@ -1567,7 +1567,7 @@ em.search-keyword {
     background-color: #fff;
     z-index: 8888;
     letter-spacing: normal;
-    position: absolute; }
+    position: fixed; }
   body.show .overlay {
     width: 100%;
     height: 100%;
