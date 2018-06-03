@@ -1502,16 +1502,17 @@ em.search-keyword {
 
 @media print, screen and (max-width: 48em) {
   .btn-menu {
-    display: block;
     border: 0;
     width: 30px;
     height: 25px;
     background-color: transparent;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     z-index: 9999; }
+  .btn-menu.active {
+    display: block; }
   .btn-menu:focus {
     outline: none; }
   .show_menu .btn-menu:focus {
@@ -1544,6 +1545,8 @@ em.search-keyword {
     content: '';
     top: -8px;
     right: 0; }
+  .show .btn-menu {
+    display: block; }
   .show .btn-menu .bar {
     background-color: transparent; }
   .show .btn-menu .bar:before {
@@ -1563,14 +1566,11 @@ em.search-keyword {
     transition: width 0.3s ease-in;
     background-color: #fff;
     z-index: 8888;
-    letter-spacing: normal; }
-  body.show > div {
-    display: none; }
+    letter-spacing: normal;
+    position: absolute; }
   body.show .overlay {
     width: 100%;
     height: 100%;
-    display: block; }
-  body.show .btn-menu {
     position: fixed; }
   .overlay nav ul {
     list-style-type: none;
