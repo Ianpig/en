@@ -1567,11 +1567,10 @@ em.search-keyword {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
   .overlay {
-    width: 0;
     height: 100%;
     overflow: hidden;
     top: 0;
-    right: 0;
+    right: -100%;
     transition: width 0.3s ease-in;
     background-color: #fff;
     z-index: 8888;
@@ -1581,7 +1580,8 @@ em.search-keyword {
   body.show .overlay {
     width: 100%;
     height: 100%;
-    position: fixed; }
+    position: fixed;
+    right: 0; }
   .overlay ul {
     list-style-type: none;
     position: relative;
