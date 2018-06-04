@@ -1623,7 +1623,7 @@ em.search-keyword {
     -moz-box-shadow: none;
     box-shadow: none; }
   .lang-list {
-    display: inline-block; }
+    display: initial; }
   .lang-list a {
     line-height: inherit;
     margin-left: 5px;
