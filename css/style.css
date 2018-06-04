@@ -1504,6 +1504,11 @@ em.search-keyword {
   display: flex;
   justify-content: space-around; }
 
+.search-button {
+  padding: .429em 1em;
+  margin-left: 5px;
+  width: 90px; }
+
 @media print, screen and (max-width: 48em) {
   .btn-menu {
     border: 0;
