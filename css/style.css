@@ -1497,8 +1497,12 @@ em.search-keyword {
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd; }
 
-.btn-menu {
+.btn-menu, .overlay {
   display: none; }
+
+.vertical-center {
+  display: flex;
+  justify-content: space-around; }
 
 @media print, screen and (max-width: 48em) {
   .btn-menu {
@@ -1567,7 +1571,8 @@ em.search-keyword {
     background-color: #fff;
     z-index: 8888;
     letter-spacing: normal;
-    position: fixed; }
+    position: fixed;
+    display: block; }
   body.show .overlay {
     width: 100%;
     height: 100%;
